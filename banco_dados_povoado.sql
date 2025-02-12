@@ -67,18 +67,18 @@ CREATE TABLE Anfitriao_Produto (
 
 -- Inserindo dados na tabela Anfitriao
 INSERT INTO Anfitriao (IdAnfitriao, Nome, Endereco, telefone) VALUES
-(1, 'Carlos Silva', 'Rua A, 123', 11987654321),
-(2, 'Mariana Souza', 'Rua B, 456', 11991234567);
+(1, 'Carlos Silva', 'Rua A, 123', '11987654321'),
+(2, 'Mariana Souza', 'Rua B, 456', '11991234567');
 
 -- Inserindo dados na tabela Administrador
 INSERT INTO Administrador (IdAdministrador, Nome, telefone) VALUES
-(1, 'João Pereira', 11976543210),
-(2, 'Fernanda Lima', 11999887766);
+(1, 'João Pereira', '11976543210'),
+(2, 'Fernanda Lima', '11999887766');
 
 -- Inserindo dados na tabela Convidado
 INSERT INTO Convidado (IdConvidado, Nome, CPF, telefone) VALUES
-('C001', 'Ana Oliveira', 12345678901, 11988776655),
-('C002', 'Ricardo Santos', 98765432100, 11977665544);
+(1, 'Ana Oliveira', '12345678901', '11988776655'),
+(2, 'Ricardo Santos', '98765432100', '11977665544');
 
 -- Inserindo dados na tabela Produto
 INSERT INTO Produto (IdProduto, Nome, Grupo) VALUES
@@ -88,14 +88,14 @@ INSERT INTO Produto (IdProduto, Nome, Grupo) VALUES
 
 -- Inserindo dados na tabela Endereco
 INSERT INTO Endereco (IdEndereco, Rua, Bairro, numero, Cidade, CEP) VALUES
-('E001', 'Rua das Flores', 'Centro', '100', 'São Paulo', 12345678),
-('E002', 'Avenida Paulista', 'Bela Vista', '2000', 'São Paulo', 87654321);
+(1 , 'Rua das Flores', 'Centro', '100', 'São Paulo', '12345678'),
+(2 , 'Avenida Paulista', 'Bela Vista', '2000', 'São Paulo', '87654321');
 
 -- Inserindo dados na tabela Telefone
 INSERT INTO Telefone (IdTelefone, Operadora, numero, IdAnfitriao, IdAdministrador, IdConvidado) VALUES
-(1, 'Vivo', 11987654321, 1, NULL, NULL),
-(2, 'Claro', 11991234567, 2, NULL, NULL),
-(3, 'Tim', 11976543210, NULL, 1, NULL),
-(4, 'Oi', 11999887766, NULL, 2, NULL),
-(5, 'Vivo', 11988776655, NULL, NULL, 'C001'),
-(6, 'Claro', 11977665544, NULL, NULL, 'C002');
+(1, 'Vivo', '11987654321', 1, NULL, NULL),
+(2, 'Claro', '11991234567', 2, NULL, NULL),
+(3, 'Tim', '11976543210', NULL, 1, NULL),
+(4, 'Oi', '11999887766', NULL, 2, NULL),
+(5, 'Vivo', '11988776655', NULL, NULL, 1),
+(6, 'Claro', '11977665544', NULL, NULL, 2);
